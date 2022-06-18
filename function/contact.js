@@ -19,6 +19,10 @@ class Contact {
     async clickSubmitButton(){
         await contactUsPage.clickSubmitButton()
     }
+    async navigateToContactForm(){
+        await contactUsPage.navigateToContactForm()
+    }
+
 }
 
 module.exports = new Contact()
