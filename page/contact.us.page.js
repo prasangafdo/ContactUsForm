@@ -6,13 +6,13 @@ class ContactUsPage {
     get txtName(){
         return $('name')
     }
-    get lblEmail(){
+    get txtEmail(){
         return $('email')
     }
     get txtPhone(){
         return $('phone')
     }
-    get lblWebSite(){
+    get txtWebSite(){
         return $('url')
     }
     get txtMessage(){
@@ -23,7 +23,24 @@ class ContactUsPage {
     }
 
 
-
+    async enterName(name){
+        await this.txtName.setValue(name)
+    }
+    async enterEmail(email){
+        await this.txtEmail.setValue(email)
+    }
+    async enterPhone(phone){
+        await this.txtPhone.setValue(phone)
+    }
+    async enterWebSite(webSite){
+        await this.txtWebSite.setValue(webSite)
+    }
+    async enterMessage(message){
+        await this.txtMessage.setValue(message)
+    }
+    async clickSubmitButton(){
+        await this.btnSubmit.click()
+    }
 
 
 
