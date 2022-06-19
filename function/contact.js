@@ -22,6 +22,9 @@ class Contact {
     async navigateToContactForm(){
         await contactUsPage.navigateToContactForm()
     }
+    async isContactUsTopicDisplaying(){
+        return await contactUsPage.isContactUsTopicDisplaying()
+    }
 
 }
 

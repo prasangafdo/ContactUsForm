@@ -22,7 +22,9 @@ class ContactUsPage {
         return('#contact-submit')
     }
 
-
+    async isContactUsTopicDisplaying(){
+        return await this.lblContact.isDisplayed()
+    }
     async enterName(name){
         await this.txtName.setValue(name)
     }
