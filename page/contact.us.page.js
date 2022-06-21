@@ -19,7 +19,7 @@ class ContactUsPage {
         return $('[name="message"')
     }
     get btnSubmit(){
-        return('#contact-submit')
+        return $('#contact-submit')
     }
 
     async isContactUsTopicDisplaying(){
