@@ -4,19 +4,19 @@ class ContactUsPage {
         return $("//h3[text()='Contact']")
     }
     get txtName(){
-        return $('name')
+        return $('[name="name"')
     }
     get txtEmail(){
-        return $('email')
+        return $('[name="email"')
     }
     get txtPhone(){
-        return $('phone')
+        return $('[name="phone"')
     }
     get txtWebSite(){
-        return $('url')
+        return $('[name="url"')
     }
     get txtMessage(){
-        return $('message')
+        return $('[name="message"')
     }
     get btnSubmit(){
         return('#contact-submit')
