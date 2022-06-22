@@ -17,6 +17,11 @@ describe('Verify the functionalities of the contact us form', ()=>{
         expect (await contact.isSuccessMessageDisplaying()).toBeTruthy()
         expect (await contact.getSuccessMessageText()).toHaveTextContaining('Message sent, thank you for contacting us!')
     })
+    it('Verify the error messages are displaying properly', async ()=>{
+        await contact.navigateToContactForm()
+        expect(await contact.isContactUsTopicDisplaying()).toBeTruthy()
+
+    })
 
     //Add negative scenarios
 })
