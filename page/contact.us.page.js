@@ -21,6 +21,9 @@ class ContactUsPage {
     get btnSubmit(){
         return $('#contact-submit')
     }
+    get lblSuccess(){
+        return $('//div[@class="success"]')
+    }
 
     async isContactUsTopicDisplaying(){
         return await this.lblContact.isDisplayed()
@@ -42,6 +45,13 @@ class ContactUsPage {
     }
     async clickSubmitButton(){
         await this.btnSubmit.click()
+        await browser.pause(3000)
+    }
+    async isSuccessMessageDisplaying(){
+        return await this.lblSuccess.isDisplayed()
+    }
+    async getSuccessMessageText(){
+        return await this.lblSuccess.getText()
     }
 
 

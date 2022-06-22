@@ -25,6 +25,12 @@ class Contact {
     async isContactUsTopicDisplaying(){
         return await contactUsPage.isContactUsTopicDisplaying()
     }
+    async isSuccessMessageDisplaying(){
+        return await contactUsPage.isSuccessMessageDisplaying()
+    }
+    async getSuccessMessageText(){
+        return await contactUsPage.getSuccessMessageText()
+    }
 
 }
 
