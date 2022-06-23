@@ -24,6 +24,16 @@ class ContactUsPage {
     get lblSuccess(){
         return $('//div[@class="success"]')
     }
+    get lblErrorName(){
+        return $('//input[@name="name"]/following-sibling::span')
+    }
+    get lblErrorEmail(){
+        return $('//input[@name="email"]/following-sibling::span')
+    }
+    get lblErrorPhone(){
+        return $('//input[@name="phone"]/following-sibling::span')
+    }
+
 
     async isContactUsTopicDisplaying(){
         return await this.lblContact.isDisplayed()
