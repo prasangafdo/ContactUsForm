@@ -63,7 +63,15 @@ class ContactUsPage {
     async getSuccessMessageText(){
         return await this.lblSuccess.getText()
     }
-
+    async getErrorNameMessageText(){
+        return await this.lblErrorName.getText()
+    }
+    async geErrorEmailMessageText(){
+        return await this.lblErrorEmail.getText()
+    }
+    async getErrorPhoneMessageText(){
+        return await this.lblErrorPhone.getText()
+    }
 
 
 

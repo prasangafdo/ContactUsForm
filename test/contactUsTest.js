@@ -20,7 +20,9 @@ describe('Verify the functionalities of the contact us form', ()=>{
     it('Verify the error messages are displaying properly', async ()=>{
         await contact.navigateToContactForm()
         expect(await contact.isContactUsTopicDisplaying()).toBeTruthy()
-
+        expect(await contact.getErrorNameMessageText()).toHaveText('Name is required')
+        expect(await contact.geErrorEmailMessageText()).toHaveText('Email is required')
+        expect(await contact.getErrorPhoneMessageText()).toHaveText('Phone is required')
     })
 
     //Add negative scenarios

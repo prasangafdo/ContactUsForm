@@ -31,6 +31,15 @@ class Contact {
     async getSuccessMessageText(){
         return await contactUsPage.getSuccessMessageText()
     }
+    async getErrorNameMessageText(){
+        return await contactUsPage.getErrorNameMessageText()
+    }
+    async geErrorEmailMessageText(){
+        return await contactUsPage.geErrorEmailMessageText()
+    }
+    async getErrorPhoneMessageText(){
+        return await contactUsPage.getErrorPhoneMessageText()
+    }
 
 }
 
