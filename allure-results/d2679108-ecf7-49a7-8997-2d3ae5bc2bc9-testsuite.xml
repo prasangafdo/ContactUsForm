@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1655622527302' stop='1655622528865'>
+    <name>Verify the functionalities of the contact us form</name>
+    <title>Verify the functionalities of the contact us form</title>
+    <test-cases>
+        <test-case start='1655622527302' status='passed' stop='1655622528864'>
+            <name>Verify the user can navigate to contact us form</name>
+            <title>Verify the user can navigate to contact us form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-102.0.5005.115'/>
+            </parameters>
+            <steps>
+                <step start='1655622527304' status='passed' stop='1655622528823'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='0e1e123f-324c-47c6-beef-175093e560bd-attachment.json' type='application/json' size='66'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655622528826' status='passed' stop='1655622528845'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='88a1fa45-f24a-4462-ad0a-70c6643752a7-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='88922136-d19e-47a6-a0f6-ff379378da56-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1655622528850' status='passed' stop='1655622528863'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='e6bef01a-9cef-4396-90f0-5e4d95f10029-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='9dfa0829-37c1-4e16-94fd-a7b4f44baee9-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
